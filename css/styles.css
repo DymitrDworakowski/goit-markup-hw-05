@@ -60,19 +60,10 @@ header a {
 
 }
 
-.header-list {
-    display: flex;
-    font-size: var(--font-size);
-    line-height: 1.14;
-    font-weight: var(--font-weight);
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    margin-right: 300px;
-}
 
-.header-list>.nav-link:not(:last-child) {
+/* .header-list>.nav-link:not(:last-child) {
     margin-right: 50px;
-}
+} */
 
 /* ===Logo-Web=== */
 .logo-link {
@@ -113,18 +104,36 @@ header a {
 }
 
 /* ===Nav=== */
-.nav-link {
+.header-list {
+    display: flex;
+    font-size: var(--font-size);
+    line-height: 1.14;
+    font-weight: var(--font-weight);
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    margin-right: 300px;
+
+    gap: 50px;
+}
+.header-list .nav-link {
     font-weight: var(--font-weight);
     color: var(--color-dark);
     font-size: var(--font-size);
+
+    line-height: 1.14;
+    position: relative;
+    padding-bottom: 32px;
+    letter-spacing: 0.02em;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-list .current::after {
-    position: absolute;
     content: "";
+    position: absolute;
     width: 100%;
     height: 4px;
-    top: 76px;
+    top: 71px;
     right: 0;
     bottom: 0;
     left: 0;
@@ -140,6 +149,8 @@ header a {
 .nav-link:hover,
 .nav-link:focus {
     color: var(--color-hover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ===Contacts Headre/Footer=== */
@@ -157,6 +168,8 @@ header a {
 .contacts:hover,
 .contacts:focus {
     color: var(--color-hover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-header-mail {
@@ -167,6 +180,8 @@ header a {
 .icon-header-mail:hover,
 .icon-header-mail:focus {
     fill: var(--color-hover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ===Footer=== */
@@ -231,6 +246,8 @@ header a {
 .footer-link-icon:hover,
 .footer-link-icon:focus {
     background-color: var(--color-hover);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-container {
@@ -250,7 +267,8 @@ header a {
 .adres:hover,
 .adres:focus {
     color: var(--color-hover);
-
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adres-blok-footer {
@@ -271,7 +289,6 @@ header a {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #2F303A;
-
 
 }
 
@@ -311,7 +328,7 @@ header a {
 
     cursor: pointer;
 }
-
+/* ===Backdrop=== */
 .backdrop {
     position: fixed;
     width: 100vw;
@@ -394,6 +411,11 @@ header a {
 }
 
 /* ===Blok-Img=== */
+.section-box-img {
+    padding-top: 0;
+    padding-bottom: 94px;
+}
+
 .box-img-title {
     margin-bottom: 50px;
 
@@ -405,13 +427,31 @@ header a {
     color: var(--color-dark);
 }
 
-.section-box-img {
-    padding-top: 0;
-    padding-bottom: 94px;
-}
-
 .box-img {
     display: flex;
+}
+
+.box-computer-img{
+    position: relative
+}
+
+.text-on-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: white;
+    background: rgba(47, 48, 58, 0.8);
 }
 
 .img {
@@ -479,6 +519,8 @@ header a {
     color: #FFFFFF;
     background-color: var(--color-hover);
     border-radius: 50%;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-social-icon:not(:last-child) {
@@ -530,6 +572,8 @@ header a {
 .link-icon:focus {
     color: #2196f3;
     border: 1px solid #2196f3;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-clients {
@@ -574,7 +618,8 @@ header a {
     color: #FFFFFF;
     cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ===Our projects=== */
