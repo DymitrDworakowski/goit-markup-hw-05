@@ -194,7 +194,6 @@ header a {
     background-color: #2F303A;
     padding-bottom: 60px;
     padding-top: 60px;
-    padding-left: 215px;
     display: flex;
 
 }
@@ -653,9 +652,14 @@ header a {
     margin-left: 30px;
     flex-wrap: wrap;
     display: flex;
+
 }
 
 .title-projects {
+    text-align: left;
+    padding-left: 24px;
+    padding-bottom: 4px;
+
     font-size: 18px;
     line-height: 2;
     color: var(--color-dark);
@@ -664,10 +668,15 @@ header a {
 }
 
 .text-projects {
+    text-align: left;
+    padding-left: 24px;
+    padding-bottom: 4px;
+    
     font-size: 16px;
     line-height: 1.18;
     font-weight: 400;
     color: var(--color-main)
+
 }
 
 .container-cards {
@@ -688,11 +697,11 @@ header a {
     transition-duration: 250ms;
 }
 
-.items-card {
+/* .items-card {
     text-align: left;
     padding-left: 24px;
     padding-bottom: 4px;
-}
+} */
 
 .img-overlay {
     overflow: hidden;
